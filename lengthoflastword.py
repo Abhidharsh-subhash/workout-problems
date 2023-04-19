@@ -12,4 +12,4 @@ def lengthOfLastWord(s):
 
 
 
-print(lengthOfLastWord('hello world '))
+print(lengthOfLastWord('hello world'))
