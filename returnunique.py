@@ -10,14 +10,16 @@ def unique(array):
 arr=[1,6,4,6,3,5,8,4,8]
 print(unique(arr))
 
+#here space complexity is O(n) and time complexity is O(n)
+#wrong
 def uniq(array):
-    dictionary={}
+    my_dict={}
     for i in array:
-        if i in dictionary:
-            dictionary[i]+=1
+        if i in my_dict:
+            my_dict[i]+=1
         else:
-            dictionary[i]=1
-    for i,count in dictionary.items():
+            my_dict[i]=1
+    for i,count in my_dict.items():
         if count == 1:
             print(i)
 
