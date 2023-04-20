@@ -19,6 +19,6 @@ def mergeAlternately(word1, word2):
         return result
 
 
-a='ab'
+a='abjgvkuvkj'
 b='pqrs'
 print(mergeAlternately(a,b))
