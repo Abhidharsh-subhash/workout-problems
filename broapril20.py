@@ -7,11 +7,11 @@ def common(array1,array2):
 
 arr1=[]
 arr2=[]
-n1=int(input('number of elements in first array'))
+n1=int(input('number of elements in first array '))
 for i in range(n1):
     el=int(input())
     arr1.append(el)
-n2=int(input('number of elements in second array'))
+n2=int(input('number of elements in second array '))
 for i in range(n2):
     el=int(input())
     arr2.append(el)
