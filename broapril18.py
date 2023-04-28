@@ -12,6 +12,6 @@ def second(array):
                 b=array[i]
         return b
 
-arr=[44,6,88,43,78,67,99]
+arr=[96,6,88,43,78,67,99]
 print(second(arr))
     
