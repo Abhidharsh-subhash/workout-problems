@@ -1,3 +1,4 @@
+#incomplete
 #input=[1,1,0,1,1,1] output=>3 most consecutive 1
 #input=[1,0,1,1,0,1] output=>2
 
