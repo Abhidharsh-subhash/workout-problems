@@ -1,12 +1,13 @@
-#incomplete
 def nonrepeating(array):
-    count=0
     for i in range(len(array)):
-        for j in range(i+1,len(array)):
-            if array[i] == array[j]:
+        count=0
+        for j in range(len(array)):
+            if i!=j and array[i] == array[j]:
                 count+=1
+                break
         if count == 0:
             return array[i]
+    return None
         
-arr=[2,2,1]
+arr=[4,1,2,1,2]
 print(nonrepeating(arr))
