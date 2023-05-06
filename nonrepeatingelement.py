@@ -1,3 +1,4 @@
+#its time complexity is O(N)
 def nonrepeating(array):
     for i in range(len(array)):
         count=0
