@@ -2,7 +2,6 @@
 def merge(array1,array2):
     result=[]
     l1=len(array1)
-    l2=len(array2)
     i=0
     j=len(array2)-1
 
