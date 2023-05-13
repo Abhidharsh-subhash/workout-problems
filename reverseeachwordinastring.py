@@ -1,6 +1,11 @@
+#incomplete
 def revstring(string):
     result=''
-    while i<len(string):
+    i=0
+    j=0
+    k=0
+    l=0
+    while i < len(string):
         if string[i] == ' ':
             print(0)
             result+=' '
