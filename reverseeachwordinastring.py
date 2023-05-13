@@ -1,26 +1,13 @@
 #incomplete
 def revstring(string):
-    result=''
-    i=0
-    j=0
-    k=0
-    l=0
-    while i < len(string):
-        if string[i] == ' ':
-            print(0)
-            result+=' '
-        else:
-            print(1)
-            j=i
-            k=i
-            while string[j] != ' ':
-                print(2)
-                j+=1
-            l=j-1
-            for p in range(l,k-1,-1):
-                print(3)
-                result+=string[p]
-        i=l+1
-    return result
-string='hello world'
+    words = string.split()  # Split the string into individual words
+    result = []
+    
+    for word in words:
+        result.append(word[::-1])  # Reverse each word and add it to the result list
+        print(result)
+    
+    return ' '.join(result)  # Join the reversed words with spaces
+
+string = 'my name is abhidharsh'
 print(revstring(string))
