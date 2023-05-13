@@ -1,4 +1,3 @@
-#incomplete
 def revstring(string):
     words = string.split()  # Split the string into individual words
     result = []
