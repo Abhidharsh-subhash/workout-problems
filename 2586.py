@@ -16,17 +16,14 @@
 # - "artro" is a vowel string because it starts with 'a' and ends with 'o'.
 # The number of vowel strings in the mentioned range is 3.
 
-def vowelstrings(words):
+def vowelstrings(words,left,right):
     vowels=['a', 'e', 'i', 'o','u']
     count=0
-    for i in words:
-        if len(i) == 1:
-            if i in vowels:
-                count+=1
-        else:
-            if (i[0] in vowels) and (i[-1] in vowels):
-                count+=1
+    for i in range(left,right+1):
+        word=words[i]
+        if (word[0] in vowels) and (word[-1] in vowels):
+            count+=1
     return count
 
-words=["vo","j","i","s","i"]
-print(vowelstrings(words))
+words=["are","amy","u"]
+print(vowelstrings(words,0,2))

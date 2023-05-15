@@ -15,5 +15,5 @@ def average(salary):
     d=len(salary)-2
     return (s/d)
 
-salary=[1000,2000,3000]
+salary=[4000,3000,1000,2000]
 print(average(salary))
