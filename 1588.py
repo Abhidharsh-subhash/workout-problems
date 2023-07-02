@@ -15,13 +15,15 @@
 def sumOddLengthSubarrays(arr):
     result=0
     n=len(arr)
-    for i in range(n):
-        for j in range(i, n):
-            subarray = arr[i:j+1]
-            length = len(subarray)
-            if length % 2 == 1 and length >= 3:
-                result += sum(subarray)
-    
+    for i in arr:
+        result+=i
+    if n%2 == 1 and n>1:
+        result=result*2
+    if n>3:
+        for i in range(n):
+            if i+3<=n:
+                for j in range(i,i+3):
+                    result+=arr[j]
     return result
 
 arr = [6,9,14,5,3,8,7,12,13,1]
