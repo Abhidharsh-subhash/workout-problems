@@ -1,1 +1,5 @@
-dfgsdfgfgsfgsdfsdfgsdgdsfg
+# Input: allowed = "ab", words = ["ad","bd","aaab","baa","badab"]
+# Output: 2
+# Explanation: Strings "aaab" and "baa" are consistent since they only contain characters 'a' and 'b'.
+
+def countConsistentStrings(allowed,words):
