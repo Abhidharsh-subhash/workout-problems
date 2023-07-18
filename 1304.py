@@ -9,5 +9,27 @@ def sumZero(n):
         result=[]
         if n%2 == 1:
             result.append(0)
-            x=(n-1)/2
-          return
+            x=(n-1)//2
+            for i in range(x):
+                a=i+1
+                result.append(a)
+                result.append(a*(-1))
+        else:
+            x=n//2
+            for i in range(x):
+                a=i+1
+                result.append(a)
+                result.append(a*(-1))
+        return result
+n=5
+print(sumZero(n))
+
+#simple solution
+
+# l,rem=n//2,n%2
+# if rem != 0:ans=[0]
+# else: ans=[]
+# for i in range(l+1):
+#     ans.append(i)
+#     ans.append(-1)
+# return ans
