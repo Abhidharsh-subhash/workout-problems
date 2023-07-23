@@ -11,10 +11,10 @@ def countPairs(nums,k):
     result=0
     for i in range(len(nums)):
         for j in range(i+1,len(nums)):
-            if (nums[i] == nums[j]) and ((i*j)%2 == 0):
+            if (nums[i] == nums[j]) and ((i*j)%k == 0):
                 result+=1
                 continue
     return result
-nums = [5,5,9,2,5,5,9,2,2,5,5,6,2,2,5,2,5,4,3]
-k = 7
+nums = [1,2,3,4]
+k = 1
 print(countPairs(nums,k))
