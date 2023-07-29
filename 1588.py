@@ -20,10 +20,12 @@ def sumOddLengthSubarrays(arr):
     if n%2 == 1 and n>1:
         result=result*2
     if n>3:
+        k=3
         for i in range(n):
-            if i+3<=n:
-                for j in range(i,i+3):
+            if i+k<=n:
+                for j in range(i,i+k):
                     result+=arr[j]
+                k+=2
     return result
 
 arr = [6,9,14,5,3,8,7,12,13,1]
