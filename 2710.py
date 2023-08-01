@@ -8,5 +8,5 @@ def removeTrailingZeros(num):
     for i in array:
         
 
-num = "51230100
+num = "51230100"
 print(removeTrailingZeros(num))
