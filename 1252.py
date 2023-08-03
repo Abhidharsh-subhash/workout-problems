@@ -18,4 +18,4 @@
 # The final matrix is [[1,3,1],[1,3,1]], which contains 6 odd numbers.
 
 def oddCells(m,n,indices):
-    
+    pass
