@@ -18,5 +18,23 @@
 # The final matrix is [[1,3,1],[1,3,1]], which contains 6 odd numbers.
 
 def oddCells(m,n,indices):
-    
-    pass
+    result=0
+    arr=[[0 for i in range(n)] for j in range(m)]
+    for i in range(len(indices)):
+        for j in range(len(indices[i])):
+            x=indices[i][j]
+            if j == 0:
+                for k in range(len(arr[x])):
+                    arr[x][k]+=1
+            else:
+                for k in range(m):
+                    arr[k][x]+=1
+    for i in range(len(arr)):
+        for j in range(len(arr[i])):
+            if arr[i][j] % 2 == 1:
+                result+=1
+    return result
+m = 2 
+n = 2
+indices = [[1,1],[0,0]]
+print(oddCells(m,n,indices))

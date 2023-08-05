@@ -11,14 +11,19 @@ def validPalindrome(s):
     i=0
     while i <= len(x)//2:
         if x[i]!=x[len(x)-i-1]:
-            if delete < 1:
+            if delete < 1 and (x.count(x[len(x)-i-1]) == 1):
                 x.pop(len(x)-i-1)
+                delete+=1
+                i=i
+            elif delete < 1 and (x.count(x[i]) == 1):
+                x.pop(i)
                 delete+=1
                 i=i
             else:
                 return False
         i+=1
     return True
+
 
 s = "tcaac"
 print(validPalindrome(s))
