@@ -23,6 +23,5 @@ def validPalindrome(s):
                 return False
         i+=1
     return True
-
 s = "tcaac"
 print(validPalindrome(s))
