@@ -2,15 +2,22 @@
 
 def GCD(str1,str2):
     result=[]
-    out=''
+    # out=''
+    # for i in str1:
+    #     if i in str2:
+    #         result.append(i)
+    # res=set(result)
+    # for i in res:
+    #     out+=i
+    # return out
     for i in str1:
-        if i in str2:
+        if (i in str2) and (i not in result):
             result.append(i)
-    res=set(result)
-    for i in res:
-        out+=i
-    return out
+    if len(result) > 1:
+        return ''.join(result)
+    else:
+        return '' 
 
-str1 = "ABCABC"
-str2 = "ABC"
+str1 = "LEET"
+str2 = "CODE"
 print(GCD(str1,str2))
