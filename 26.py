@@ -4,11 +4,14 @@
 # It does not matter what you leave beyond the returned k (hence they are underscores).
 
 def removeDuplicates(nums):
-    result=set(nums)
-    nums.clear()
-    for i in result:
-        nums.append(i)
-    nums.sort()
+    # result=set(nums)
+    # nums.clear()
+    # for i in result:
+    #     nums.append(i)
+    # nums.sort()
+    # print(nums)
+    # return len(nums)
+    nums[:]=sorted(set(nums))
     return len(nums)
 
 
