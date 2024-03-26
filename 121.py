@@ -4,27 +4,23 @@
 # Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
 
 def maxProfit(prices):
-    # low=float('inf')
-    # for i in range(len(prices)):
-    #     low=min(low,prices[i])
-    #     index=prices.index(low)
-    # high=low
-    # for i in range(index,len(prices)):
-    #     if prices[i] > high:
-    #         high=prices[i]
-    # if (high == low):
-    #     return 0
-    # else:
-    #     profit=high-low
-    #     return profit 
+    # O(n^2)
+    # x=0
+    # for i in range(len(prices)-1):
+    #     for j in range(i+1,len(prices)):
+    #         if prices[j]-prices[i] > x:
+    #             x=prices[j]-prices[i]
+    # return x
+    minprice=prices[0]
     profit=0
-    low=float('inf')
-    for i in prices:
-        if low > i:
-            low=i
-        elif i-low > profit:
-            profit=i-low
+    for i in range(1,len(prices)):
+        if prices[i] > minprice:
+            if prices[i]-minprice > profit:
+                profit=prices[i]-minprice
+        elif prices[i] < minprice:
+            minprice=prices[i]
     return profit
 
-prices =[7,6,4,3,1]
+             
+prices=[7,1,5,3,6,4]
 print(maxProfit(prices))
